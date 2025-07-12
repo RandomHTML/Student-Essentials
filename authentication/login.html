@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="shortcut icon" href="../logo.png" type="image/x-icon" />
+        <link rel="stylesheet" href="login.css" />
+        <title>Student Essentials | Login</title>
+    </head>
+    <body>
+        <header>
+            <a href="../index.html" class="logo">Student Essentials</a>
+        </header>
+        <main>
+            <div class="login-box">
+                <form
+                    action="/login"
+                    autocomplete="off"
+                    method="post"
+                    action="">
+                    <label for="email">Email: </label>
+                    <input
+                        type="email"
+                        id="email"
+                        name="email"
+                        autocomplete="off"
+                        required />
+
+                    <label for="password">Password: </label>
+                    <input
+                        type="password"
+                        id="password"
+                        name="password"
+                        autocomplete="off"
+                        required />
+
+                    <p>
+                        Do not have an account? Click here to
+                        <a href="register.html">register</a>.
+                    </p>
+
+                    <button type="submit" id="login">Login!</button>
+                </form>
+            </div>
+        </main>
+        <footer>
+            <p>@ 2025. A fun project made for STEM Fair.</p>
+        </footer>
+
+        <script type="module" src="login.js" defer></script>
+    </body>
+</html>

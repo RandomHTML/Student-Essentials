@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="shortcut icon" href="../logo.png" type="image/x-icon" />
+        <link rel="stylesheet" href="spelling-checker.css" />
+        <title>Student Essentials | Home</title>
+    </head>
+    <body>
+        <header>
+            <a href="../index.html" class="logo">Student Essentials</a>
+            <nav class="features">
+                <a href="../calculator/calculator.html">Calculator</a>
+                <a href="../spelling-checker/spelling-checker.html"
+                    >Spelling Checker</a
+                >
+                <a href="../school-events/school-events.html">School Events</a>
+                <a href="../goal-tracker/goal-tracker.html">Goal Tracker</a>
+                <a href="../note-taker/note-taker.html">Note Taker</a>
+                <a
+                    href="../authentication/register.html"
+                    class="small-margin-seperator authenticate-anchor-tags"
+                    >Register</a
+                >
+                <a
+                    href="../authentication/login.html"
+                    class="authenticate-anchor-tags"
+                    >Login</a
+                >
+                <a href="../sign-out/sign-out.html" class="sign-out-element"
+                    >...loading</a
+                >
+            </nav>
+        </header>
+        <main>
+            <textarea name="spelling-checker-section" id="spelling-checker-section" autocapitalize="sentences" autocorrect="on"></textarea>
+        </main>
+        <footer>
+            <p>@ 2025. A fun project made for STEM Fair.</p>
+        </footer>
+
+        <script type="module" src="spelling-checker-firebase.js" defer></script>
+        <script src="spelling-checker.js"></script>
+        <script
+            type="module"
+            src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+        <script
+            nomodule
+            src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+    </body>
+</html>

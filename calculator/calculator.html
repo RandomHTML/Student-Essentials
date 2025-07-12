@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="shortcut icon" href="../logo.png" type="image/x-icon" />
+        <link rel="stylesheet" href="calculator.css" />
+        <title>Student Essentials | Home</title>
+    </head>
+    <body>
+        <header>
+            <a href="../index.html" class="logo">Student Essentials</a>
+            <nav class="features">
+                <a href="../calculator/calculator.html">Calculator</a>
+                <a href="../spelling-checker/spelling-checker.html"
+                    >Spelling Checker</a
+                >
+                <a href="../school-events/school-events.html">School Events</a>
+                <a href="../goal-tracker/goal-tracker.html">Goal Tracker</a>
+                <a href="../note-taker/note-taker.html">Note Taker</a>
+                <a
+                    href="../authentication/register.html"
+                    class="small-margin-seperator authenticate-anchor-tags"
+                    >Register</a
+                >
+                <a
+                    href="../authentication/login.html"
+                    class="authenticate-anchor-tags"
+                    >Login</a
+                >
+                <a href="../sign-out/sign-out.html" class="sign-out-element"
+                    >...loading</a
+                >
+            </nav>
+        </header>
+        <main>
+            <div class="calculator">
+                <input type="text" placeholder="-" class="input-box" readonly />
+                <div class="buttons">
+                    <button onclick="addNumber('0')">0</button>
+                    <button onclick="addNumber('1')">1</button>
+                    <button onclick="addNumber('2')">2</button>
+                    <button onclick="addNumber('+')" class="orangeBtn">
+                        +
+                    </button>
+                    <button onclick="addNumber('3')">3</button>
+                    <button onclick="addNumber('4')">4</button>
+                    <button onclick="addNumber('5')">5</button>
+                    <button onclick="addNumber('*')" class="orangeBtn">
+                        x
+                    </button>
+                    <button onclick="addNumber('6')">6</button>
+                    <button onclick="addNumber('7')">7</button>
+                    <button onclick="addNumber('8')">8</button>
+                    <button onclick="addNumber('/')" class="orangeBtn">
+                        /
+                    </button>
+                    <button onclick="addNumber('9')">9</button>
+                    <button onclick="addNumber('00')">00</button>
+                    <button onclick="clearInput()">AC</button>
+                    <button onclick="solveInput()" class="orangeBtn">=</button>
+                    <button onclick="copyAnswer()" class="copy-answer">
+                        Copy Answer
+                    </button>
+                </div>
+            </div>
+            <div class="history">
+                <h2>History<button class="clear-history" onclick="clearHis()">Clear!</button></h2>
+                <br>
+                <p class="history-element-1"></p>
+                <p class="history-element-2"></p>
+                <p class="history-element-3"></p>
+                <p class="history-element-4"></p>
+                <p class="history-element-5"></p>
+                <p class="history-element-6"></p>
+                <p class="history-element-7"></p>
+                <p class="history-element-8"></p>
+                <p class="history-element-9"></p>
+                <p class="history-element-10"></p>
+            </div>
+        </main>
+        <footer>
+            <p>@ 2025. A fun project made for STEM Fair.</p>
+        </footer>
+
+        <script type="module" src="calculator-firebase.js" defer></script>
+        <script src="calculator.js"></script>
+        <script
+            type="module"
+            src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+        <script
+            nomodule
+            src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+    </body>
+</html>
